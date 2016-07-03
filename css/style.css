@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100,100i,300,300i,400i,500,500i,700,700i,900,900i';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+} 
+.link{
+	display:inline-block;
+	text-transform:capitalize;
+	cursor:pointer;
+	color:#023653;
+}
+.personBg{
+	background:url('../images/personbg.jpg') no-repeat top center;
+	background-size:cover;
+	max-height:363px;
+	min-height:363px;
+	padding-top:40px;
+	
+}
+.displayFirstName{
+	color: #d61e14;
+	font-weight:700;
+	transform:scale(2,3); /* W3C */
+	-webkit-transform:scale(2,3); /* Safari and Chrome */
+	-moz-transform:scale(2,3); /* Firefox */
+	-ms-transform:scale(2,3); /* IE 9 */
+	-o-transform:scale(2,3);
+}
+.displayLastName{
+	color:#000;
+	
+}
+.personName{
+	position:relative;
+	text-align:center;
+}
+
+.personHolder{
+	position:relative;
+	font-size:45px;	
+}
+.companyInfo{
+	font-style:italic;
+	font-size:18px;
+}
+.personPosition{
+	font-weight:bold;
+	text-align:center;
+}
+.border{
+	border-left:solid 2px #000;
+}
+.personalInfo, .emailInfo, .urlInfo{
+	font-style:italic;
+	font-size:13px;
+}
+.title{
+	font-size:30px;
+	border-bottom:solid 1px #333;
+}
+.form-group{
+	position:relative;
+	top:0px;
+}
+.searchIcon{
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.emptyField{
+	color:red;
+	font-size:18px;
+}
+.borderWrong{
+	border:solid 1px red;
+}
+.img-center{
+	margin:0 auto;
+}
+.apiError{
+	color:red;
+}
+.Header{
+	background:#333;
+	padding:10px 0px;
+}
+.Nav{
+	color:#fff;
+}
+.navbar{
+	margin-bottom:0px;
+}
+.navbar-default{
+	background-color:transparent;
+	border:none;
+}
+.navbar-default .navbar-nav > li > a{
+	color:#fff;
+	font-size:15px;
+	text-transform:uppercase;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+
+/*small devices */
+@media (min-width: 749px) and (max-width: 969px)  {
+	.personName{
+		font-size:35px;
+	}
+	.companyInfo{
+		font-size:15px;
+	}
+	.personBg{
+		padding-top:30px;
+	}
+}
+
+/*extra small devices */
+@media (min-width: 0px) and (max-width: 749px)  {
+	.personBg{
+		min-height:550px;
+	}
+	.border{
+		border-left:none;
+		border-top:solid 2px #000;
+		margin-top:20px;
+	}
+	.personHolder{
+		font-size:25px;
+	}
+	.companyInfo{
+		font-size:14px;
+	}
+	.info{
+		font-size:13px;
+	}
+	.personalInfo, .emailInfo, .urlInfo{
+		font-size:12px;
+	}
+	.emptyField{
+		font-size:12px;
+	}
+}
